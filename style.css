@@ -1,0 +1,135 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+ }
+ 
+ body {
+    background: purple;
+    /* position: relative; */
+    /* left: -50%; */
+ }
+ 
+ .quizapp {
+    background-color: white;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+ 
+ }
+ 
+ .quizapp h1 {
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #001e4d;
+    font-weight: 800;
+    border-bottom: 1px solid #001e4d;
+    text-align: center;
+    padding-bottom: 25px;
+ }
+ 
+ .quizapp h2 {
+    font-family: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #001e4d;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 10px;
+ }
+ 
+ .btn {
+    background-color: white;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #001e4d;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.5;
+ }
+ 
+ .btn:hover:not([disabled]) {
+    background-color: #272323;
+    color: white;
+ }
+ 
+ .btn:disabled {
+    cursor: no-drop;
+ }
+ 
+ #next-btn {
+    background-color: #001e4d;
+    color: white;
+    border: 0;
+    padding: 10px;
+    font-weight: 600;
+    width: 100px;
+    margin: 20px auto 0;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+ }
+ 
+ .correct {
+    background-color: #35b66d;
+ }
+ 
+ .incorrect {
+    background-color: rgb(236, 87, 87);
+ }
+ 
+ .hidden {
+    display: none;
+ }
+ .container .hidden{
+    width: 420px;
+    padding: 50px 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+    
+ 
+ }
+ 
+ .circular-progress {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: conic-gradient(#001e4d 3.6deg, #ededed 0deg);
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+ }
+ 
+ 
+ .circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    background-color: #fff;
+ }
+ 
+ .progress-value{
+    position: relative;
+    font-size: 50px;
+    font-weight: 600;
+    color: #001e4d;
+ }
+ 
